@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .container{
+                    display:grid;
+                    grid-template-columns: 100px 100px 100px;
+                    grid-template-rows: 100px 100px 100px;
+                    position: relative;
+                    top:30vh;
+                    justify-content: center;
+                    
+                    }
+                    
+.box{
+    height:100px;
+    width:100px;
+    position:relative;
+    
+}
+.item1{
+border-right:2px solid white;
+border-bottom:2px solid white;
+}
+.item4{
+    border-right:2px solid white;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+}
+.item7{
+    border-right:2px solid white;
+    border-top:2px solid white;
+ }
+ .item2{
+border-right:2px solid white;
+border-bottom:2px solid white;
+}
+.item5{
+    border-right:2px solid white;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+}
+.item8{
+    border-right:2px solid white;
+    border-top:2px solid white;
+ }
+ .item3{
+
+border-bottom:2px solid white;
+}
+.item6{
+    
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+}
+.item9{
+    
+    border-top:2px solid white;
+ }
+body{
+    margin:0;
+    padding:0;
+}
+*{  color:white;
+    margin:0;
+    padding:0;
+}
+form{
+    width:100%;
+    position:relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+body{
+    background:#283747;
+}
+.tabs{
+    background: linear-gradient(lightgrey,grey);
+    width:300px;
+    margin:0 auto;
+    padding:15px;
+}
+
+.radio{
+height:14px;
+width:14px;
+margin-left:25px;
+}
+label{margin-left:22px;}
+
+
+.x{
+    background:url(X.png);
+    background-repeat: none;
+    background-size: 0px;
+    opacity:1;
+    background-position: center;
+    background-clip: content-box;
+
+}
+
+.o{
+    background:url(O.png);
+    background-repeat: none;
+    background-size: 0px;
+    opacity:1;
+    background-position: center;
+    background-clip: content-box;
+
+}
+
+
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color:#FFF;margin-top: 10vh; font-family: Arial, Helvetica, sans-serif;">Tic Tac Toe!</h1>
+        <form>
+        <div class="tabs"><label>X</label><input type="radio" name="playerchoice" id="x" value="x" /><label>O</label><input id="o" type="radio" name="playerchoice" id="o" value="o" ></div></form>
+        <button class="game--restart" id="gameRestart" style="color:black;position: relative;display: block;margin:0 auto;">Restart Game</button>
+    </form>    
+    <h2 id="gameStatus" class="game--status" style="text-align:center"></h2>
+        <div class="container">
+                
+            <div id="box" data-cell-index="0" class="item1 box"></div>
+            <div id="box" data-cell-index="1" class="item2 box"></div>
+            <div id="box" data-cell-index="2" class="item3 box"></div>
+            <div id="box" data-cell-index="3" class="item4 box"></div>
+            <div id="box" data-cell-index="4" class="item5 box"></div>
+            <div id="box" data-cell-index="5" class="item6 box"></div>
+            <div id="box" data-cell-index="6" class="item7 box"></div>
+            <div id="box" data-cell-index="7" class="item8 box"></div>
+            <div id="box" data-cell-index="8" class="item9 box"></div>
+            
+
+        </div>
+
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
+
+        <script async src="/script.js">
+        
+
+
+                
+            
+
+        </script>
+    </body>
+</html>
